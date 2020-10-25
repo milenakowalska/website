@@ -1,0 +1,26 @@
+<%- include('partials/header.ejs') -%>
+
+<div id='blog-main' class='my-5 p-5 container'>
+    <h1 class='pt-0 mt-0'>New Blog Post</h1>
+    <form action="/compose-blog" id="blog-post" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <input type="text" class="form-control" name='title' placeholder="Title">
+        </div>
+        <div class="form-group">
+            <textarea style='white-space: pre-wrap;' form='blog-post' class="form-control"  name='content' placeholder="Post content"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="file" name="file"><br>
+        </div>
+        <div class="form-group">
+          <input type="radio" name="section" value='english'> English<br>
+          <input type="radio" name="section" value='german'> German<br>
+          <input type="radio" name="section" value='blog'> Blog<br>
+      </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+</div>
+
+
+
+<%- include('partials/footer.ejs') -%>

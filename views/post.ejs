@@ -1,0 +1,21 @@
+<%- include('partials/header.ejs') -%>
+
+<div id='blog-main' class='px-5 container'>
+    <div class='post-page'>
+        <div class='row'>
+            <div class='col-md-6 text-left'>
+                <h2><%= post.title %></h2>
+            </div>
+            <div class='col-md-6 text-right'>
+                <a href='/blog'><button class='btn btn-dark'>Back to blog</button></a>                
+            </div>
+        </div>
+        <p><%= post.data_published %></p>
+        <img id='post-img' class='mb-5 mr-5' style="max-width: 400px;" src="/<%= post.image %>">
+        <p class='post-content'><%- post.content %> </p>
+    </div>
+</div>
+
+
+
+<%- include('partials/footer.ejs') -%>

@@ -1,0 +1,33 @@
+<%- include('partials/header.ejs') -%>
+
+<div id='blog-main' class='my-5 p-5 container'>
+    <h1 class='pt-0 mt-0'>Update Post</h1>
+    <form action="/update" id="blog-post" method="POST">
+        <div class="form-group">
+          <input type='hidden' value=<%= post._id %> name='id'>
+          <input type="text" class="form-control" name='title' value="<%= post.title %>">
+        </div>
+        <div class="form-group">
+            <textarea style='white-space: pre-wrap;' 
+                        form='blog-post' 
+                        class="form-control"  
+                        name='content'><%= post.content || post.description %></textarea>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder='URL' name='url' value="<%= post.url %>">
+        </div>
+
+        <div class="form-group">
+          <input type="radio" name="section" value='language'> Language Section<br>
+          <input type="radio" name="section" value='blog'> Blog Post<br>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+</div>
+
+
+
+
+
+<%- include('partials/footer.ejs') -%>

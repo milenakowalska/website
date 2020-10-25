@@ -1,0 +1,30 @@
+<%- include('partials/header.ejs') -%>
+
+<div id='blog-main' class='px-5 container'>
+
+    <div class=row>
+
+    <% posts.forEach(function(post){ %>
+            <a class='post-link post col-lg-4 col-md-6' href="/blog/<%=post.title%>">
+            <div class='text-center'>
+                <img class='main-blog-img' style='max-height: 150px;' src="<%= post.image %>">
+            </div>
+                <h3><%= post.title %></h3>
+                <p><%= post.data_published %></p>
+                <p><%- post.content.substring(0,100) %> ... [Read more]</p>
+            </a>
+        
+        <% })%>
+        
+    </div>
+
+
+</div>
+
+
+
+<%- include('partials/footer.ejs') -%>
+
+
+
+

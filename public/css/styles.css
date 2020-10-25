@@ -1,0 +1,177 @@
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    margin-bottom: 60px; /* Margin bottom by footer height */}
+
+  body, h1, h2 {
+    font-family: 'Nanum Brush Script', cursive;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  #main-h1 {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 6rem;
+    margin-top: 50px;
+  }
+  #language-h1 {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 3rem;
+    margin-top: 0px;
+  }
+  
+  #img-me {
+    border-radius: 10px;
+    max-height: 200px;
+    max-width: 400px;
+    border: 2px solid black
+  }
+
+  nav {
+    background-color: #797a7e;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Set the fixed height of the footer here */
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #e4e5e6;
+    color: #797a7e;
+  }
+
+  .carousel-img{
+      border-radius: 5px;
+      width: 300px;
+      height: 190px !important;
+      max-width: 100%;
+      max-height: 100%;
+
+  }
+
+#carousel-section{
+    background-color: #797a7e;
+    color: white;
+    padding: 40px;
+
+}
+body{
+  background-color: white;
+  background-image: url('fish.png');
+  background-repeat: repeat;
+}
+#blog-main {
+  background-color: white;
+}
+.post, .post-page {
+  /* border: 1px solid; */
+  padding: 20px 40px;
+  border-radius: 5px;
+  margin: 15px 0px;
+}
+.post-content {
+  text-align: justify;
+  line-height: 2;
+}
+
+.post-link{
+  text-decoration: none;
+  color: black;
+}
+
+.post-link:hover{
+  text-decoration: none;
+  color: rgb(87, 87, 87)
+}
+
+.post:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.language {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px 40px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 5px;
+  margin: 15px 0px;
+}
+.language:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+#heading{
+    background-color: white;
+    background-image: url('fish.png');
+    background-repeat: repeat;
+    min-height: 30px;
+    padding: 40px;
+    padding-bottom: 70px;
+}
+
+#main-img {
+    height: 500px;
+    margin: 0px
+}
+
+.btn-dark {
+    background-color: #797a7e;
+    color: #d8d3cd;
+    max-height: 80px;
+    max-width: 90%;
+    width: 300px;
+    padding: 15px;
+    margin:10px
+}
+
+.btn-logout {
+  background-color: #ffb7b7;
+  color: #686664;
+  max-height: 80px;
+  max-width: 90%;
+  width: 150px;
+  padding: 15px;
+  margin:5px
+}
+
+i {
+  font-size: 30px;
+}
+
+.buttons {
+  height: 100%;
+  margin: auto;
+
+}
+.carousel-link{
+  text-decoration: none;
+  color: #d8d3cd
+}
+.carousel-link:hover {
+  text-decoration: none;
+  color: #e4e5e6
+}
+
+.main-blog-img {
+  border-radius: 10px;
+  max-height: 400px;
+  margin-right: auto;
+}
+
+#post-img {
+  float: left;
+}
+
+@media (max-width: 850px) {
+  #post-img {
+    float: none;
+  }
+  #main-h1 {
+    font-size: 4rem;
+  }
+  #heading {
+    padding: 0px 0px 20px 0px;
+  }
+}
+
+

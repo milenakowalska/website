@@ -1,0 +1,49 @@
+<%- include('partials/header.ejs') -%>
+
+<div id='heading'>
+    <div class='row'>
+
+
+        <div class='col-md-12 align-self-center text-center'>
+            <h1 id='main-h1'>Welcome to my Website!</h1>
+                <a href='http://milenakowalska.pythonanywhere.com/' target="_blank"><button type='button' class='btn btn-dark'><i class="far fa-calendar-check"></i> Start using ToDoList's</button></a>
+                <a href='https://milenakow.pythonanywhere.com/' target="_blank"><button class="btn btn-dark"><i class="fas fa-book-reader"></i> Start using Learning Tracker</button></a>
+        </div>
+    </div>
+</div>
+
+<div id='carousel-section'>
+<div id=carousel class='container carousel slide' data-ride='carousel'>
+    <div class='carousel-inner'>
+        <div class='carousel-item active text-center justify-content-center'>
+            <a class='carousel-link' href='/english'><div class="d-block w-100 my-5">
+                <img class='carousel-img' src='img/bbc.jpg'>
+                <h2>BBC Ideas - inspiring materials for English learners</h2>
+            </div></a>
+        </div>
+        <div class='carousel-item text-center justify-content-center'>
+            <a class='carousel-link' href='/german'><div class="d-block w-100 my-5">
+                <img class='carousel-img' src='img/sprachbar.png'>
+                <h2>Sprachbar - listen to German podcasts and practice vocabulary</h2>
+            </div></a>
+        </div>
+        <div class='carousel-item text-center justify-content-center'>
+            <a class='carousel-link' href='/blog'><div class="d-block w-100 my-5">
+                <img class='carousel-img' src='img/gszs.jpg'>
+                <h2>Blog</h2>
+            </div></a>
+        </div>
+    </div>
+    <a href='#carousel' class='carousel-control-prev' role='button' data-slide='prev'>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a href='#carousel' class='carousel-control-next' role='button' data-slide='next'>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+
+</div>
+</div>
+
+<%- include('partials/footer.ejs') -%>
