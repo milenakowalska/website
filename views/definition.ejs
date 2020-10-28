@@ -1,0 +1,55 @@
+<%- include('partials/header.ejs') -%>
+
+<div id='blog-main' class='my-5 p-5 container'>
+    <div class='row justify-content-center'>
+
+    <h1 style="margin-top: 10px;" id='language-h1'>Word definition</h1>
+    </div>
+    <div class='row justify-content-center'>
+    <div class='content'>
+
+        <% words.forEach(function(word){ %>
+            <h3><%= word.key %></h3>
+            <h5>
+                <% word.translations.forEach(function(translation){ %>
+                    <span>- <%= translation %> </span>
+                <% }); %>
+            </h5>
+            <% if (word.context) {%>
+                <h5 style='color:gray'>
+                    <% word.context.forEach(function(context){ %>
+                        <em><span> - <%= context %></span></em>
+                    <% }); %>
+                </h5>
+            <% } %>
+            <hr>
+        <% }); %>
+
+        <h2 class='text-center'>Examples:</h2>
+        <% examples.forEach(function(example){ %>
+            <h5><%= example.example %></h5>
+            <% if (example.translation_example) { %>
+                <% if (example.translation_example !== 'None' && example.translation_example !== "(')") { %>
+                <h6 style='color:gray'><%= example.translation_example %></h6>
+                <% }; %>
+            <% }; %>
+            <hr>
+        <% }); %>
+
+    </div>
+    </div>
+    <div class='row justify-content-center'>
+        <form action='/dictionary'>
+            <button type="submit" class="btn btn-secondary"><< DICTIONARY </button>
+        </form><br>
+    </div>
+
+
+    <p style='color:grey'>Source 1: <cite>https://www.wordreference.com/</cite></p>
+    <p style='color:grey'>Source 2: <cite>https://dictionary.reverso.net/</cite></p>
+    
+    </div>
+    </div>
+
+
+<%- include('partials/footer.ejs') -%>

@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xdxf lang_from="ger" lang_to="ita" format="visual" revision="DD">
+  <meta_info>
+    <title>Wordreference: allemand - italien</title>
+    <description>Dictionary: Wordreference; language-from: allemand; language-to: italien</description>
+    <full_name>Wordreference: allemand - italien</full_name>
+    <creation_date>28-10-2020</creation_date>
+  </meta_info>
+  <lexicon>
+    <ar key="Stunde">
+      <k>Stunde</k>
+      <span>ora </span>
+      <context> (intervallo di tempo)</context>
+      <hr/>
+      <k>Stunde, Schulstunde, Schulstunde</k>
+      <span>ora di lezione , sessione </span>
+      <hr/>
+      <k>Stunde</k>
+      <span>lezione , ora , esercizio </span>
+      <hr/>
+      <k>Stunde, Unterrichtsstunde</k>
+      <span>lezione </span>
+      <context> (Schule)</context>
+      <hr/>
+      <k>Std, St, Stunde, St</k>
+      <span>h </span>
+      <context> (Abkürzung) (ora)</context>
+      <hr/>
+      <k>Sitzung, Saison, Stunde, Saison</k>
+      <span>sessione </span>
+      <hr/>
+      <k>stündlich, einmal die Stunde, einmal die Stunde</k>
+      <span>orario , per ora, relativo a un'ora </span>
+      <hr/>
+      <k>Wann?, Um welche Uhrzeit?, Zu welcher Stunde?, Um welche Uhrzeit?</k>
+      <span>a che ora? </span>
+      <hr/>
+      <k>halb, eine halbe Stunde später, eine halbe Stunde später</k>
+      <span>alla mezza </span>
+      <context> (informale)</context>
+      <hr/>
+      <k>stündlich, einmal in der Stunde, einmal in der Stunde</k>
+      <span>ogni ora </span>
+      <hr/>
+      <k>Stunde um Stunde</k>
+      <span>per ore e ore </span>
+      <hr/>
+      <k>weniger als eine Stunde, nicht ganz eine Stunde, nicht ganz eine Stunde</k>
+      <span>meno di un'ora </span>
+      <hr/>
+      <k>eine halbe Stunde, die halbe Stunde, die halbe Stunde</k>
+      <span>mezz'ora , mezz'oretta </span>
+      <hr/>
+      <k>eine halbe Stunde, die halbe Stunde, die halbe Stunde</k>
+      <span>mezz'ora </span>
+      <hr/>
+      <k>kmh, km/h, Kilometer pro Stunde, Kilometer pro Stunde</k>
+      <span>km/h </span>
+      <context> (Abk)</context>
+      <hr/>
+      <k>Kilometer pro Stunde</k>
+      <span>chilometro orario, chilometro all'ora , km/h </span>
+      <hr/>
+      <ex>Die Fahrt dauert zweieinhalb Stunden.</ex>
+      <trans>Ci vogliono due ore e mezza per arrivare lì.</trans>
+      <hr/>
+      <ex>Meine erste Stunde heute ist Englisch.</ex>
+      <trans>Come parte dei miei studi di musica ho tre ore di esercizio con il flauto ogni venerdì.</trans>
+      <hr/>
+      <ex>Die Stunde (od: Unterrichtsstunde) dauerte 45 Minuten.</ex>
+      <trans>Era una lezione di quarantacinque minuti.</trans>
+      <hr/>
+      <ex>Ich bin sicherlich eine halbe Stunde lang gelaufen.</ex>
+      <trans>Ho corso per una buona mezz'ora. // La mattina mi serve solo mezz'ora per prepararmi.</trans>
+      <hr/>
+    </ar>
+    <ar key="Flasche">
+      <k>Flasche</k>
+      <span>bottiglia </span>
+      <hr/>
+      <k>Flasche</k>
+      <span>bottiglia </span>
+      <hr/>
+      <k>Flasche</k>
+      <span>matraccio </span>
+      <context> (vague)</context>
+      <hr/>
+      <k>Flasche</k>
+      <span>biberon , poppatoio </span>
+      <hr/>
+      <k>Krug, Flasche, Kanne, Flasche</k>
+      <span>caraffa , bricco , bottiglione </span>
+      <hr/>
+      <k>Weichei, Flasche, Feigling, Angsthase, Flasche</k>
+      <span>vigliacco, codardo </span>
+      <context> (übertragen)</context>
+      <hr/>
+      <k>Fl, Flasche, Flasche</k>
+      <span>bott. </span>
+      <context> (bottiglia)</context>
+      <hr/>
+      <k>Idiot, Trottel, Blödmann, Schwachkopf, Flasche, Trottel</k>
+      <span>stupido, idiota </span>
+      <context> (beleidigend)</context>
+      <hr/>
+      <k>Schlappschwanz, Feigling, Flasche, Feigling</k>
+      <span>incapace , cacasotto , bottiglia per il vino, bottiglia da vino </span>
+      <context> (dispregiativo)</context>
+      <hr/>
+      <k>Bier, Flasche Bier, Glas Bier, Dose Bier, Flasche Bier</k>
+      <span>birra </span>
+      <context> (zählbar)</context>
+      <hr/>
+      <k>Weinflasche, Flasche Wein, Flasche Wein</k>
+      <span>bottiglia di vino </span>
+      <context> (contenuto)</context>
+      <hr/>
+      <k>in einer Flasche</k>
+      <span>in bottiglia , imbottigliato </span>
+      <context> (servito o venduto)</context>
+      <hr/>
+      <k>die Flasche bekommen</k>
+      <span>allattato artificialmente , allattato con il biberon </span>
+      <hr/>
+      <k>Flasche Wein, Weinflasche, Weinflasche</k>
+      <span>bottiglia di vino </span>
+      <hr/>
+      <k>Flasche Wasser, Flasche mit Wasser, Wasserflasche, Flasche mit Wasser</k>
+      <span>bottiglia d'acqua </span>
+      <hr/>
+      <k>jemanden/etwas mit der Flasche füttern</k>
+      <span>allattare </span>
+      <hr/>
+      <ex>Die Flasche ist randvoll mit Limonade.</ex>
+      <trans>Quella bottiglia è piena di limonata.</trans>
+      <hr/>
+      <ex>Er trank eine ganze Flasche Orangenlimo.</ex>
+      <trans>Ha bevuto una bottiglia intera di aranciata.</trans>
+      <hr/>
+      <ex>So macht man das nicht, du Idiot!</ex>
+      <trans>Non si fa così, idiota!</trans>
+      <hr/>
+      <ex>Können Sie uns vier Gläser Bier bringen?</ex>
+      <trans>Puoi portarci quattro birre?</trans>
+      <hr/>
+    </ar>
+  </lexicon>
+</xdxf>

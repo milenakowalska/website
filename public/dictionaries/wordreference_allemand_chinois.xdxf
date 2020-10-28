@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xdxf lang_from="ger" lang_to="zho" format="visual" revision="DD">
+  <meta_info>
+    <title>Wordreference: allemand - chinois</title>
+    <description>Dictionary: Wordreference; language-from: allemand; language-to: chinois</description>
+    <full_name>Wordreference: allemand - chinois</full_name>
+    <creation_date>28-10-2020</creation_date>
+  </meta_info>
+  <lexicon>
+    <ar key="Flasche">
+      <k>Flasche</k>
+      <span>瓶子 </span>
+      <hr/>
+      <k>Flasche</k>
+      <span>一瓶（的量） </span>
+      <hr/>
+      <k>Flasche</k>
+      <span>烧瓶，长颈蒸馏瓶 </span>
+      <context> (vague)</context>
+      <hr/>
+      <k>Flasche</k>
+      <span>奶瓶, 哺乳器 </span>
+      <hr/>
+      <k>Krug, Flasche, Kanne, Flasche</k>
+      <span>大壶，大罐 </span>
+      <context> (盛装液体的)</context>
+      <hr/>
+      <k>Weichei, Flasche, Feigling, Angsthase, Flasche</k>
+      <span>胆小鬼，懦弱的人，怯懦的人 </span>
+      <context> (übertragen) (古语)</context>
+      <hr/>
+      <k>Fl, Flasche, Flasche</k>
+      <span>瓶子 </span>
+      <hr/>
+      <k>Idiot, Trottel, Blödmann, Schwachkopf, Flasche, Trottel</k>
+      <span>笨蛋 , 呆子 , 傻瓜 </span>
+      <context> (beleidigend)</context>
+      <hr/>
+      <k>Schlappschwanz, Feigling, Flasche, Feigling</k>
+      <span>胆小的人，无能的人，怯懦的人 , 葡萄酒瓶 </span>
+      <context> (俚语)</context>
+      <hr/>
+      <k>Bier, Flasche Bier, Glas Bier, Dose Bier, Flasche Bier</k>
+      <span>一杯啤酒，一罐啤酒，一扎啤酒 </span>
+      <context> (zählbar) (可数)</context>
+      <hr/>
+      <k>Weinflasche, Flasche Wein, Flasche Wein</k>
+      <span>（一）瓶葡萄酒的量 </span>
+      <hr/>
+      <k>in einer Flasche</k>
+      <span>瓶装的 </span>
+      <hr/>
+      <k>die Flasche bekommen</k>
+      <span>奶粉喂养的，人工营养的 </span>
+      <hr/>
+      <k>Flasche Wein, Weinflasche, Weinflasche</k>
+      <span>（一）瓶葡萄酒 </span>
+      <hr/>
+      <k>Flasche Wasser, Flasche mit Wasser, Wasserflasche, Flasche mit Wasser</k>
+      <span>瓶装水 </span>
+      <hr/>
+      <k>jemanden/etwas mit der Flasche füttern</k>
+      <span>用奶瓶喂育… </span>
+      <hr/>
+      <ex>Die Flasche ist randvoll mit Limonade.</ex>
+      <trans>那个瓶子里装满了柠檬水。</trans>
+      <hr/>
+      <ex>Er trank eine ganze Flasche Orangenlimo.</ex>
+      <trans>他喝了一整瓶橙汁。</trans>
+      <hr/>
+      <ex>So macht man das nicht, du Idiot!</ex>
+      <trans>你这个笨蛋，不是那么做的！</trans>
+      <hr/>
+      <ex>Können Sie uns vier Gläser Bier bringen?</ex>
+      <trans>能给我们拿四杯啤酒过来吗？</trans>
+      <hr/>
+    </ar>
+  </lexicon>
+</xdxf>

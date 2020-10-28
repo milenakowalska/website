@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xdxf lang_from="ger" lang_to="pol" format="visual" revision="DD">
+  <meta_info>
+    <title>Wordreference: allemand - polonais</title>
+    <description>Dictionary: Wordreference; language-from: allemand; language-to: polonais</description>
+    <full_name>Wordreference: allemand - polonais</full_name>
+    <creation_date>28-10-2020</creation_date>
+  </meta_info>
+  <lexicon>
+    <ar key="Heft">
+      <k>Broschüre, Heft, Booklet, Heft</k>
+      <span>książeczka, broszura </span>
+      <hr/>
+      <k>Notizbuch, Heft, Heft</k>
+      <span>zeszyt, notes </span>
+      <hr/>
+      <ex>Auf dem Campus verteilte ein Mann Broschüren über seine Religion.</ex>
+      <trans/>
+      <hr/>
+      <ex>Rachel kaufte einige Notizblöcke für ihre Klasse.</ex>
+      <trans/>
+      <hr/>
+    </ar>
+    <ar key="zerschlagen">
+      <k>zerschlagen, schlagen, schlagen</k>
+      <span>uderzać, porażać , uderzyć, porazić </span>
+      <context> (Objekt)</context>
+      <hr/>
+      <k>zerbrochen, zerschlagen, zerschmettert, zerschlagen</k>
+      <span>potrzaskany, roztrzaskany, rozbity </span>
+      <hr/>
+      <ex>Greta fegte die Scherben der zerbrochenen Glasvase auf.</ex>
+      <trans/>
+      <hr/>
+    </ar>
+  </lexicon>
+</xdxf>

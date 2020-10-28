@@ -1,0 +1,38 @@
+<%- include('partials/header.ejs') -%>
+<div id='blog-main' class='my-5 p-5 container'>
+    <div class='row justify-content-center'>
+    <h1>Alle Wörter...</h1>
+
+</div>
+
+<% words.forEach(function(word){ %>
+
+
+    <div id='meaning' class="word row <%= word.article %>">
+        <div class='col-md-5'>
+            <h3><%= word.article %> <%= word.word %></h3>
+        </div>
+        <div class='col-md-7'>
+            <% for (var i = 0; i < word.definitions.length; i++) { %>
+                
+                <% if (word.definitions[i] !== '') { %>
+                    <%= i + 1 %>. <%= word.definitions[i] %>
+                    <br>
+            <% }}; %>
+
+
+        </div>
+        
+        <!-- <a href='german-article/delete/{{ word.Id }}' class="btn btn-secondary btn-sm">Löschen</a> -->
+    
+</div>
+<br>
+<% }); %>
+</div>
+
+<form action='/german-article'>
+    <button type="submit" class="btn btn-secondary"><< BACK </button>
+</form>
+<p style='color:grey'>Source: <cite>https://www.duden.de/</cite></p>
+
+<%- include('partials/footer.ejs') -%>

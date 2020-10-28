@@ -19,7 +19,7 @@ html {
   }
   #language-h1 {
     font-family: 'Nanum Brush Script', cursive;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-top: 0px;
   }
   
@@ -136,6 +136,17 @@ body{
   margin:5px
 }
 
+.btn-mylight {
+  background-color: #c3c5cc;
+  color: #5f5d5a;
+  max-height: 80px;
+  max-width: 90%;
+  width: 300px;
+  padding: 15px;
+  margin:10px
+}
+
+
 i {
   font-size: 30px;
 }
@@ -177,3 +188,27 @@ i {
 }
 
 
+
+.der {
+  background-color: rgb(187, 187, 255);
+  color: rgb(0, 0, 129);
+  padding: 15px;
+ }
+ 
+ .die {
+  background-color: rgb(255, 181, 181);
+  color: rgb(160, 0, 0);
+  padding: 15px;
+ }
+ 
+ .das {
+  background-color: rgb(255, 255, 184);
+  color: rgb(133, 97, 0);
+  padding: 15px;
+ }
+ 
+ .oder {
+   background-color: #c3c5cc;
+   color: rgb(107, 107, 107);
+   padding: 15px;
+ }

@@ -11,7 +11,7 @@ const multer = require('multer');
 const session = require('express-session');
 const passport = require('passport');
 const passportLocalMongoose = require('passport-local-mongoose');
-const e = require('express');
+let {PythonShell} = require('python-shell')
 
 const upload = multer({ dest: '/tmp' });
 const app = express();
@@ -72,6 +72,17 @@ const languageSchema = new mongoose.Schema({
     url: String
 });
 const Language = mongoose.model('Language', languageSchema);
+
+//////// Create a for german-article wordSchema and Word Model
+
+const wordSchema = new mongoose.Schema({
+    word: String,
+    article: String,
+    definitions: Array
+});
+
+const Word = new mongoose.model('Word', wordSchema);
+
 
 /////////// ADMIN ROUTE
 app.route('/admin')
@@ -177,10 +188,8 @@ app.post('/update', function(req,res){
                     console.log(err);
                 } else {
                     const title = req.body.title
-                    console.log(title);
                     let postContent = req.body.content
                     postContent = postContent.replace(/\n\r?/g, '<br />');
-                    console.log(postContent);
                     Post.updateOne(
                         {_id: id},
                         {$set: {title: title, content: postContent}},
@@ -298,6 +307,311 @@ app.get('/lang/update/:langTitle', function(req,res){
 app.get('/comming-soon', function(req,res){
 	res.render('comming-soon')
 })
+
+
+//////// DICTIONARY
+app.route('/dictionary')
+.get(function(req,res){
+    res.render('dictionary', {errorStatement:null});
+})
+.post(function(req,res){
+    const dictionaryName = req.body.dictionaryName;
+    const languageFrom = req.body.languageFrom;
+    const languageTo = req.body.languageTo;
+    word = req.body.word;
+    const words = [];
+    const examples = []
+    //// PYTHON words, examples = check_word(dictionary_name, language_from, language_to, word)
+    var checkWord = __dirname + '/dictionary.py';
+    var options = {args: ['check_word', dictionaryName, languageFrom, languageTo, word]};
+
+    PythonShell.run(checkWord, options, function(err, results){
+        if(err){
+            console.log(err);
+        } else {
+            if (results == null) {
+                let errorStatement = 'Word not found';
+                res.render('dictionary', {errorStatement: errorStatement})
+            } else {
+                let converterResults = results[0].split('[Example');
+            
+                if (converterResults.length == 2) {
+                    var definitionsFound = converterResults[0];
+                    var examples = converterResults[1];
+                } else {
+                    var definitionsFound = converterResults[0];
+                    var examples = null
+                };
+                definitionsFound = definitionsFound.split('Word(');
+    
+                definitionsFound.shift();
+    
+                for (var i = 0; i < definitionsFound.length; i++) {
+                    definitionsFound[i] = definitionsFound[i].split(", ");
+                    definitionsFound[i][0] = definitionsFound[i][0].replace("key=", "")
+    
+                    
+                    var keys = 1;
+                    while(definitionsFound[i][keys].slice(0,12) !== 'translations' && definitionsFound[i][1].slice(0,7) !== 'context') {
+                        definitionsFound[i][keys] = definitionsFound[i][keys].replace("translations=", "")
+                        definitionsFound[i][keys] = definitionsFound[i][keys].replace("context=", "")
+                        definitionsFound[i][keys] = definitionsFound[i][keys].replace(/"/g, "");
+                        definitionsFound[i][keys] = definitionsFound[i][keys].replace(/⇒/g, "");
+                        definitionsFound[i][keys] = definitionsFound[i][keys].replace("translations=", "")
+                        definitionsFound[i][keys] = definitionsFound[i][keys].split(String.fromCharCode(92) + 'xad').join('')
+                        definitionsFound[i][keys] = definitionsFound[i][keys].split(String.fromCharCode(92) + 'xa0').join(' ')
+                        definitionsFound[i][keys] = definitionsFound[i][keys].split(String.fromCharCode(92) + 'n').join('')
+                        definitionsFound[i][keys] = definitionsFound[i][keys].split(String.fromCharCode(219)).join('')
+                        definitionsFound[i][keys] = definitionsFound[i][keys].split(String.fromCharCode(221)).join('')
+                        definitionsFound[i][keys] = definitionsFound[i][keys].split(String.fromCharCode(40)).join('')
+                        definitionsFound[i][keys] = definitionsFound[i][keys].split(String.fromCharCode(41)).join('')
+                        definitionsFound[i][0] = definitionsFound[i][0] + ', ' + definitionsFound[i][keys]
+                        keys++;
+                    };
+                    
+                        for(j = 0 ; j < (definitionsFound[i].length-1); j++) {
+                        // definitionsFound[i][j] = definitionsFound[i][j].replace(/'/g, "");
+                        definitionsFound[i][j] = definitionsFound[i][j].replace(/"/g, "");
+                        definitionsFound[i][j] = definitionsFound[i][j].replace(/⇒/g, "");
+                        definitionsFound[i][j] = definitionsFound[i][j].replace("translations=", "")
+                        definitionsFound[i][j] = definitionsFound[i][j].split(String.fromCharCode(92) + 'xad').join('')
+                        definitionsFound[i][j] = definitionsFound[i][j].split(String.fromCharCode(92) + 'xa0').join(' ')
+                        definitionsFound[i][j] = definitionsFound[i][j].split(String.fromCharCode(92) + 'n').join('')
+                        definitionsFound[i][j] = definitionsFound[i][j].split(String.fromCharCode(219)).join('')
+                        definitionsFound[i][j] = definitionsFound[i][j].split(String.fromCharCode(221)).join('')
+                        definitionsFound[i][j] = definitionsFound[i][j].split(String.fromCharCode(40)).join('')
+                        definitionsFound[i][j] = definitionsFound[i][j].split(String.fromCharCode(41)).join('')
+    
+    
+                        if (definitionsFound[i][j][0] === "'"){
+                            definitionsFound[i][j] = definitionsFound[i][j].substring(1);
+                        };
+                        if (definitionsFound[i][j][definitionsFound[i][j].length -1] === "'"){
+                            definitionsFound[i][j] = definitionsFound[i][j].slice(0,definitionsFound[i][j].length-1);
+                        }
+                    }
+                }
+    
+                if (examples != null) {
+                    examples = examples.split('Example(');
+                    for (var i = 0; i < examples.length; i++) {
+                        examples[i] = examples[i].split("translation_example=");
+                        examples[i][0] = examples[i][0].replace("example=", "")
+                        for (var j = 0; j < examples[i].length; j++){
+                            examples[i][j] = examples[i][j].replace(/"/g, "");
+                            examples[i][j] = examples[i][j].split(String.fromCharCode(92) + 'xad').join('')
+                            examples[i][j] = examples[i][j].split(String.fromCharCode(92) + 'xa0').join('')
+                            examples[i][j] = examples[i][j].split(String.fromCharCode(92) + 'n').join('')
+                            examples[i][j] = examples[i][j].split(String.fromCharCode(219)).join('')
+                            examples[i][j] = examples[i][j].split(String.fromCharCode(221)).join('')
+                            examples[i][j] = examples[i][j].split(String.fromCharCode(40)).join('')
+                            examples[i][j] = examples[i][j].split(String.fromCharCode(41)).join('')
+    
+                            while (examples[i][j][0] === "'"){
+                                examples[i][j] = examples[i][j].substring(1);
+                            };
+                            while (examples[i][j][examples[i][j].length -1] === "'"){
+                                examples[i][j] = examples[i][j].slice(0,examples[i][j].length-1);
+                            }
+                        }
+                    }
+                }
+               
+                let wordsFound = [];
+                definitionsFound.forEach(function(definition){
+                    
+                    let translations = [];
+                    let contextFound = [];
+    
+                    let key = definition[0];
+                    if (key[0] === "'"){
+                        key = key.substring(1);
+                    };
+                    if (key[key.length -1] === "'"){
+                        key = key.slice(0,key.length-1);
+                    }
+                    for(let i = 0; i < (definition.length-1); i++) {
+                        if (definition[i].slice(0,7) === 'context') {
+                            break;
+                        }
+                        if (!key.includes(definition[i])) {
+                            if (definition[i][0] === "'"){
+                                definition[i] = definition[i].substring(1);
+                            };
+                            if (definition[i][definition[i].length -1] === "'"){
+                                definition[i] = definition[i].slice(0,definition[i].length-1);
+                            }
+                            translations.push(definition[i])
+                            
+                        }
+                    }
+                    if (i < (definition.length)) {
+                        definition.slice(i, definition.length -1).forEach(function(entry){
+                            if (!translations.includes(entry)){
+                                if (entry[0] === "'"){
+                                    entry = entry.substring(1);
+                                };
+                                while (entry[entry.length -1] === "'" || entry[entry.length -1] === String.fromCharCode(93) || entry[entry.length -1] === '"'  ){
+                                    entry = entry.slice(0,entry.length-1);
+                                }
+                                contextFound.push(entry.replace("context=", ""));
+                            }
+                        })
+                        }
+                    wordsFound.push({key:key, translations:translations, context:contextFound});
+    
+                });
+    
+                const examplesFound = [];
+                examples.forEach(function(definition){
+                    let example = definition[0].slice(0, definition[0].length - 2);
+                    while (example[0] === "'"){
+                        example = example.substring(1);
+                    };
+                    while (example[example.length -1] === "'" || example[example.length -1] === String.fromCharCode(93) || example[example.length -1] === '"'  ){
+                        example = example.slice(0,example.length -1);
+                    }
+                    let translation_example = '';
+                    if (definition.length > 1){
+                        translation_example = definition[1].slice(0, definition[1].length - 2);
+                        if (translation_example[0] === "'"){
+                            translation_example = translation_example.substring(1);
+                        };
+                        if (translation_example[translation_example.length -1] === "'"){
+                            translation_example = translation_example.slice(0,translation_example.length-1);
+                        }
+                    };
+                    examplesFound.push({example:example, translation_example:translation_example});
+                });
+    
+                if (wordsFound.length === 1 && wordsFound[0].key === 'Word not found!') {
+                    let errorStatement = 'Word not found';
+                    res.render('dictionary', {errorStatement: errorStatement})
+                } else {
+                    res.render('definition', {words:wordsFound, examples:examplesFound})
+                }
+            }
+
+        }
+
+    });
+////////////////////////////////////////////////////////////////////////////           
+
+});
+
+
+///////// GERMAN ARTICLE
+
+app.route('/german-article')
+.get(function(req,res){
+    res.render('german-article', {errorStatement: null})
+})
+.post(function(req,res){
+    const word = req.body.word;
+    let meanings = []
+
+    const regex = new RegExp(word, 'i')
+    Word.find({word: {$regex: regex}}, function(err, foundWords){
+        if(err){
+            console.log(err);
+        } else {
+            if (foundWords.length > 0) {
+                meanings = foundWords
+                res.render('check', {meanings:foundWords, word:word})
+            } else {
+
+/////////////////////////////////////// python: meanings = find_article(word)
+                var findArticle = __dirname + '/find_article.py';
+                var options = {args: ['find_article', word]};
+
+                PythonShell.run(findArticle, options, function(err, meanings){
+                    if(err){
+                        console.log('errors!!!');
+                    } else {
+                        meaningsFound = [];
+                        let newMeanings = meanings[0].split(']], [');
+                        let convertedMeanings = []
+                        newMeanings.forEach(function(entry){
+                            convertedMeanings.push([entry.split("', ")])
+                        })
+                        convertedMeanings.forEach(function(meaning){
+                            for(var i = 0; i < meaning[0].length; i++) {
+                                meaning[0][i] = meaning[0][i].replace(/'/g, "");
+                                meaning[0][i] = meaning[0][i].split(String.fromCharCode(92) + 'xad').join('')
+                                meaning[0][i] = meaning[0][i].split(String.fromCharCode(92) + 'xa0').join('')
+                                meaning[0][i] = meaning[0][i].split(String.fromCharCode(92) + 'n').join('')
+                                meaning[0][i] = meaning[0][i].split(String.fromCharCode(219)).join('')
+                                meaning[0][i] = meaning[0][i].split(String.fromCharCode(221)).join('')
+
+                                while (meaning[0][i][0] === '['){
+                                    meaning[0][i] = meaning[0][i].substring(1);
+                                };
+                                while (meaning[0][i][meaning[0][i].length -1] === ']'){
+                                    meaning[0][i] = meaning[0][i].slice(0,meaning[0][i].length -1);
+                                }
+                            }
+
+                        })
+                        convertedMeanings.forEach(function(meaning){
+                            const begriff = meaning[0][0];
+                            let article = meaning[0][1];
+                            if (article === 'das oder der') {
+                                article = 'der oder das';
+                            } else if (article === 'das oder die') {
+                                article = 'die oder das';
+                            } else if (article === 'die oder der') {
+                                article = 'der oder die';
+                            };
+                            let definitions = null;
+                            if (meaning[0].length > 2) {
+                                    definitions = meaning[0].slice(2, meaning[0].length )
+                                };
+                            
+                            if (meanings.length !== 0) {
+                                if (begriff && word){
+                                    const newWord = Word({word:begriff, article:article, definitions:definitions});
+                                    newWord.save();
+                                    meaningsFound.push(newWord)
+                                }
+                                
+                            };
+                        });
+                    }
+                    if (meaningsFound.length > 0) {
+                        res.render('check', {meanings:meaningsFound, word:word})
+                    } else {
+                        let errorStatement = 'Word not found';
+                        res.render('german-article', {errorStatement:errorStatement});
+                    } 
+                })
+///////////////////////////////////////////////////////////////////////////////////////////////////
+        }};
+     });
+});
+
+app.get('/words',function(req,res){
+    Word.find({}).sort('article').exec(function(err,foundWords){
+        if(err){
+            console.log(err);
+            res.redirect('/');
+        } else {
+            res.render('words', {words:foundWords});
+        }
+    });
+})
+
+app.post('/delete', function(req,res){
+    const wordID = req.body.wordID;
+
+    Word.findByIdAndRemove(wordID, function(err){
+        if(err){
+            console.log(err);
+            res.redirect('/');
+        } else {
+            res.redirect('/words');
+        }
+    });
+});
 
 
 app.listen(3000, function() {

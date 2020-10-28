@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xdxf lang_from="ger" lang_to="spa" format="visual" revision="DD">
+  <meta_info>
+    <title>Wordreference: allemand - espagnol</title>
+    <description>Dictionary: Wordreference; language-from: allemand; language-to: espagnol</description>
+    <full_name>Wordreference: allemand - espagnol</full_name>
+    <creation_date>28-10-2020</creation_date>
+  </meta_info>
+  <lexicon>
+    <ar key="Flasche">
+      <k>Flasche</k>
+      <span>botella , frasco </span>
+      <context> (envase)</context>
+      <hr/>
+      <k>Flasche</k>
+      <span>botella </span>
+      <context> (contenido)</context>
+      <hr/>
+      <k>Flasche</k>
+      <span>matraz </span>
+      <context> (vague)</context>
+      <hr/>
+      <k>Flasche</k>
+      <span>mamadera </span>
+      <context> (animales)</context>
+      <hr/>
+      <k>Krug, Flasche, Kanne, Flasche</k>
+      <span>jarra , botellón </span>
+      <hr/>
+      <k>Weichei, Flasche, Feigling, Angsthase, Flasche</k>
+      <span>cobarde , pusilánime </span>
+      <context> (übertragen)</context>
+      <hr/>
+      <k>Fl, Flasche, Flasche</k>
+      <span>botella </span>
+      <hr/>
+      <k>Idiot, Trottel, Blödmann, Schwachkopf, Flasche, Trottel</k>
+      <span>imbécil , bobo, boba , tonto, tonta </span>
+      <context> (beleidigend)</context>
+      <hr/>
+      <ex>Die Flasche ist randvoll mit Limonade.</ex>
+      <trans>La botella está llena de limonada.</trans>
+      <hr/>
+      <ex>Er trank eine ganze Flasche Orangenlimo.</ex>
+      <trans>Se bebió una botella entera de naranjada.</trans>
+      <hr/>
+      <ex>So macht man das nicht, du Idiot!</ex>
+      <trans>¡Así no se hace, imbécil!</trans>
+      <hr/>
+    </ar>
+  </lexicon>
+</xdxf>

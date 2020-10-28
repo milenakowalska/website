@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xdxf lang_from="eng" lang_to="por" format="visual" revision="DD">
+  <meta_info>
+    <title>Wordreference: anglais - portugais</title>
+    <description>Dictionary: Wordreference; language-from: anglais; language-to: portugais</description>
+    <full_name>Wordreference: anglais - portugais</full_name>
+    <creation_date>28-10-2020</creation_date>
+  </meta_info>
+  <lexicon>
+    <ar key="butter">
+      <k>butter</k>
+      <span>manteiga </span>
+      <context> (spreadable food) (comida que se espalha)</context>
+      <hr/>
+      <k>butter [sth]⇒</k>
+      <span>passar manteiga , untar com manteiga , barrar </span>
+      <context> (to apply butter) (aplicar manteiga)</context>
+      <hr/>
+      <k>butter [sb] up, butter up [sb]</k>
+      <span>bajular, adular , puxar saco , lamber as botas , pão com manteiga </span>
+      <context> figurative, informal (flatter, sweet-talk)</context>
+      <hr/>
+      <k>bread and butter</k>
+      <span>pão de cada dia </span>
+      <context> informal, figurative (livelihood)</context>
+      <hr/>
+      <k>bread and butter, bread-and-butter</k>
+      <span>pão de cada dia </span>
+      <context> informal, figurative (staple, basic)</context>
+      <hr/>
+      <k>butter bean</k>
+      <span>feijão-manteiga </span>
+      <context> mainly UK (legume: lima bean)</context>
+      <hr/>
+      <k>butter dish</k>
+      <span>manteigueira </span>
+      <context> (in fridge: butter container)</context>
+      <hr/>
+      <k>butter dish</k>
+      <span>manteigueira </span>
+      <context> (at table: butter container)</context>
+      <hr/>
+      <k>butter knife</k>
+      <span>faca de manteiga </span>
+      <context> (tool for cutting butter)</context>
+      <hr/>
+      <k>cocoa butter, cacao butter</k>
+      <span>manteiga de cacau </span>
+      <context> (fat extracted from cocoa beans)</context>
+      <hr/>
+      <k>garlic butter</k>
+      <span>manteiga de alho </span>
+      <context> (butter flavored with garlic) (manteiga temperada com alho)</context>
+      <hr/>
+      <k>lima bean</k>
+      <span>feijão-de-lima , fava-de-lima </span>
+      <context> mainly US (legume: butter bean)</context>
+      <hr/>
+      <k>peanut butter</k>
+      <span>manteiga de amendoim </span>
+      <context> (spread made from peanuts)</context>
+      <hr/>
+      <k>peanut butter and jelly sandwich</k>
+      <span>sanduíche de geléia com pasta de amendoim </span>
+      <context> US (food: children's favorite)</context>
+      <hr/>
+      <k>shea butter</k>
+      <span>manteiga de karité , ori , limo da costa </span>
+      <context> (moisturizer made from shea seed)</context>
+      <hr/>
+      <k>stick of butter</k>
+      <span>tablete , barra </span>
+      <context> US (butter: quarter pound) (manteiga:100 gramas)</context>
+      <hr/>
+      <ex>Many people prefer to cook with butter instead of oil.</ex>
+      <trans>Muitas pessoas preferem cozinhar com manteiga em vez de óleo.</trans>
+      <hr/>
+      <ex>Do you butter your bread on both sides?</ex>
+      <trans>ⓘEsta frase não é uma tradução da frase em inglês  Você precisa untar a panela com manteiga para fazer ovo mexido.</trans>
+      <hr/>
+      <ex>A glass of milk with bread and butter for breakfast is the best.</ex>
+      <trans>Ele tentou bajular o chefe na esperança de conseguir um dia a mais de folga. Pare de tentar me bajular e diga logo o que quer.</trans>
+      <hr/>
+      <ex>Cooking is his bread and butter; he's a chef.</ex>
+      <trans/>
+      <hr/>
+      <ex>The vegetarian option on our menu this evening is a casserole made with butter beans.</ex>
+      <trans/>
+      <hr/>
+      <ex>There were two butter dishes on the table, one with butter and one with margarine.</ex>
+      <trans/>
+      <hr/>
+      <ex>The butter knife is not sharp as it only has to cut through butter, which is very soft.</ex>
+      <trans/>
+      <hr/>
+      <ex>Cocoa butter and cocoa solids are blended to make unsweetened chocolate.</ex>
+      <trans/>
+      <hr/>
+      <ex>I love to dip cooked shrimp in garlic butter.  The crusty bread was served with a delicious garlic butter.</ex>
+      <trans/>
+      <hr/>
+      <ex>Peanut butter is high in protein and makes a tasty snack with celery, carrots or apples.</ex>
+      <trans>A manteiga de amendoim é rica em proteína e faz um lanche gostoso com salsão, cenouras ou maçãs.</trans>
+      <hr/>
+      <ex>Peanut butter and jelly sandwiches are a staple on the children's menu.</ex>
+      <trans>Sanduíche de geléia com pasta de amendoim é um alimento básico no menu infantil.</trans>
+      <hr/>
+      <ex>I need a stick of butter for this recipe.</ex>
+      <trans>Preciso de um tablete de manteiga para essa receita.</trans>
+      <hr/>
+    </ar>
+  </lexicon>
+</xdxf>

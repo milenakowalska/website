@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xdxf lang_from="ger" lang_to="ita" format="visual" revision="DD">
+  <meta_info>
+    <title>Dictionnaire: allemand - italien</title>
+    <description>Dictionary: Dictionnaire; language-from: allemand; language-to: italien</description>
+    <full_name>Dictionnaire: allemand - italien</full_name>
+    <creation_date>28-10-2020</creation_date>
+  </meta_info>
+  <lexicon>
+    <ar key="Flasche">
+      <k>Eine Flasche Hauswein</k>
+      <span>Una bottiglia di vino della casa</span>
+      <hr/>
+      <k>Eine Flasche Rotwein</k>
+      <span>Una bottiglia di vino rosso</span>
+      <hr/>
+      <k>Eine Flasche Weißwein</k>
+      <span>Una bottiglia di vino bianco</span>
+      <hr/>
+      <k>Eine Flasche Mineralwasser</k>
+      <span>Una bottiglia di acqua minerale</span>
+      <hr/>
+      <k>Eine Flasche stilles Mineralwasser</k>
+      <span>Un bottiglia di acqua naturale</span>
+      <hr/>
+      <k>Eine Flasche Mineralwasser mit Kohlensäure</k>
+      <span>Una bottiglia di acqua gassata</span>
+      <hr/>
+      <k>Ich muss eine Flasche Spirituosen verzollen</k>
+      <span>Devo dichiarare una bottiglia di superalcolici</span>
+      <hr/>
+      <k>Bringen Sie bitte noch eine Flasche</k>
+      <span>Potrebbe portare un'altra bottiglia, per favore</span>
+      <hr/>
+      <k>Flasche</k>
+      <span>bottiglia</span>
+      <hr/>
+      <k>Flasche</k>
+      <span>flacone</span>
+      <hr/>
+      <k>Flasche</k>
+      <span>flaconcino</span>
+      <hr/>
+      <ex>Quella bottiglia di bourbon è la più vecchia della casa.</ex>
+      <trans>Das ist die älteste Flasche Bourbon im Haus.</trans>
+      <hr/>
+      <ex>Questa bottiglia di scotch costa 12.000 dollari, ed è una delle sole tre rimaste al mondo.</ex>
+      <trans>Das ist eine 12.000 Dollar teure Flasche Scotch.</trans>
+      <hr/>
+      <ex>Capovolgere il flacone con la siringa ancora inserita.</ex>
+      <trans>Flasche zusammen mit der Applikationsspritze umdrehen.</trans>
+      <hr/>
+      <ex>Ogni astuccio contiene 1 flacone da 90 compresse rivestite con film.</ex>
+      <trans>Jede Faltschachtel enthält eine Flasche mit 90 Filmtabletten.</trans>
+      <hr/>
+      <ex>Rimuovere il flaconcino vuoto e l'ago di trasferimento.</ex>
+      <trans>Die leere Flasche und die Transfernadel entfernen.</trans>
+      <hr/>
+    </ar>
+  </lexicon>
+</xdxf>

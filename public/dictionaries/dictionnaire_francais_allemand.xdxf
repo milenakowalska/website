@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xdxf lang_from="fre" lang_to="ger" format="visual" revision="DD">
+  <meta_info>
+    <title>Dictionnaire: francais - allemand</title>
+    <description>Dictionary: Dictionnaire; language-from: francais; language-to: allemand</description>
+    <full_name>Dictionnaire: francais - allemand</full_name>
+    <creation_date>28-10-2020</creation_date>
+  </meta_info>
+  <lexicon>
+    <ar key="père">
+      <k>père</k>
+      <span>Vater (nm.)</span>
+      <hr/>
+      <k>père</k>
+      <span>Vater [Väter]</span>
+      <hr/>
+      <k>père fondateur</k>
+      <span>Gründungsvater</span>
+      <hr/>
+      <k>le père Noël</k>
+      <span>der Weihnachtsmann</span>
+      <hr/>
+      <k>père de famille</k>
+      <span>Familienvater</span>
+      <hr/>
+      <k>de père en fils</k>
+      <span>vom Vater auf den Sohn</span>
+      <hr/>
+      <k>c'est son père tout craché</k>
+      <span>er ist seinem Vater wie aus dem Gesicht geschnitten</span>
+      <hr/>
+      <k>Je suis père au foyer [mère]</k>
+      <span>Ich binVollzeitvater [Vollzeitmutter]</span>
+      <hr/>
+      <k>feu son père</k>
+      <span>sein verstorbener Vater</span>
+      <hr/>
+      <k>comme mon père</k>
+      <span>wie mein Vater</span>
+      <hr/>
+      <k>son défunt père</k>
+      <span>sein verstorbener Vater</span>
+      <hr/>
+      <k>mon Révérend Père</k>
+      <span>Pater</span>
+      <hr/>
+      <k>père</k>
+      <span>Pater</span>
+      <hr/>
+      <k>père</k>
+      <span>Vater</span>
+      <hr/>
+      <k>père dans une famille monoparentale</k>
+      <span>allein Erziehender</span>
+      <hr/>
+      <k>tenir lieu de père à qn</k>
+      <span>Vaterstelle bei jdm vertreten</span>
+      <hr/>
+      <k>il croit encore au père Noël</k>
+      <span>er glaubt noch an den Klapperstorch</span>
+      <hr/>
+      <k>au chevet de son père</k>
+      <span>am Sterbebett des Vaters</span>
+      <hr/>
+      <k>le portrait de son père</k>
+      <span>das genaue Ebenbild seines Vaters</span>
+      <hr/>
+      <k>il fera un excellent père</k>
+      <span>er wird einmal einen guten Vater geben</span>
+      <hr/>
+      <k>père</k>
+      <span>Vater</span>
+      <hr/>
+      <k>père</k>
+      <span>Dad</span>
+      <hr/>
+      <ex>Der Vater von Lambert Schaus war Uhrmacher und Goldschmied.</ex>
+      <trans>Le père de Lambert Schaus était horloger-bijoutier.</trans>
+      <hr/>
+      <ex>Eine Geldheirat. Mein Vater hat ihm einen Job angeboten.</ex>
+      <trans>Mon père lui offre du travail.</trans>
+      <hr/>
+      <ex>Dein Dad und ich lieben es, deine Freunde kennenzulernen.</ex>
+      <trans>Ton père et moi adorons rencontrer tes amis.</trans>
+      <hr/>
+      <ex>Dein Dad wollte ja unbedingt die Wüste sehen.</ex>
+      <trans>Ton père voulait voir le désert.</trans>
+      <hr/>
+    </ar>
+  </lexicon>
+</xdxf>

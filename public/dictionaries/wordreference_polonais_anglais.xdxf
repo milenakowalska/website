@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xdxf lang_from="pol" lang_to="eng" format="visual" revision="DD">
+  <meta_info>
+    <title>Wordreference: polonais - anglais</title>
+    <description>Dictionary: Wordreference; language-from: polonais; language-to: anglais</description>
+    <full_name>Wordreference: polonais - anglais</full_name>
+    <creation_date>28-10-2020</creation_date>
+  </meta_info>
+  <lexicon>
+    <ar key="książka">
+      <k>książka</k>
+      <span>book , książka , księga , książka , książka audio </span>
+      <hr/>
+      <k>audiobook</k>
+      <span>książka mówiona </span>
+      <context> (spoken recording of a book)</context>
+      <hr/>
+      <k>the book</k>
+      <span>książka telefoniczna </span>
+      <context> informal, dated (telephone directory)</context>
+      <hr/>
+      <k>children's book</k>
+      <span>książka dla dzieci </span>
+      <context> (book intended for children)</context>
+      <hr/>
+      <k>cookbook, cookery book</k>
+      <span>książka kucharska </span>
+      <context> (collection of recipes)</context>
+      <hr/>
+      <k>cookery book</k>
+      <span>książka kucharska </span>
+      <context> UK (book of recipes)</context>
+      <hr/>
+      <k>directory</k>
+      <span>książka telefoniczna </span>
+      <context> (phone book)</context>
+      <hr/>
+      <k>guestbook, guest book</k>
+      <span>książka meldunkowa </span>
+      <context> (book signed by visitors)</context>
+      <hr/>
+      <k>hardback</k>
+      <span>książka w twardej oprawie </span>
+      <context> (book with hard cover)</context>
+      <hr/>
+      <k>hardcover</k>
+      <span>książka w twardej oprawie </span>
+      <context> (book with stiff cover)</context>
+      <hr/>
+      <k>hardcover book</k>
+      <span>książka w twardej oprawie </span>
+      <context> (book with a stiff cover)</context>
+      <hr/>
+      <k>order book</k>
+      <span>książka zamówień </span>
+      <context> (written log of orders placed)</context>
+      <hr/>
+      <k>paperback</k>
+      <span>książka w miękkiej oprawie </span>
+      <context> (book: paper cover)</context>
+      <hr/>
+      <k>phone book</k>
+      <span>książka telefoniczna </span>
+      <context> (telephone directory)</context>
+      <hr/>
+      <k>phonebook</k>
+      <span>książka telefoniczna </span>
+      <context> (directory of telephone numbers)</context>
+      <hr/>
+      <k>picture book</k>
+      <span>książka z rysunkami </span>
+      <context> (child's storybook with pictures)</context>
+      <hr/>
+      <k>telephone book</k>
+      <span>książka telefoniczna </span>
+      <context> (directory of phone numbers)</context>
+      <hr/>
+      <ex>Truck drivers check out lots of audio books from the public library.</ex>
+      <trans>Czytam bardzo dobrą książkę.</trans>
+      <hr/>
+      <ex>I like listening to audiobooks as I do my household chores.</ex>
+      <trans/>
+      <hr/>
+      <ex>During his career, the artist illustrated several children's books.</ex>
+      <trans/>
+      <hr/>
+      <ex>Betty has a large collection of international cookbooks.</ex>
+      <trans/>
+      <hr/>
+      <ex>I have many cookery books but they all have different versions of the same recipe.</ex>
+      <trans/>
+      <hr/>
+      <ex>Glenn looked up the plumber's number in the directory.</ex>
+      <trans/>
+      <hr/>
+      <ex>Please sign our guestbook before leaving the hotel.</ex>
+      <trans/>
+      <hr/>
+      <ex>The bag is heavy because it's filled with hardbacks.</ex>
+      <trans/>
+      <hr/>
+      <ex>The bookshelf was filled with hardcovers.</ex>
+      <trans/>
+      <hr/>
+      <ex>Even though they are expensive, I like to buy hardcover books.</ex>
+      <trans/>
+      <hr/>
+      <ex>The order book showed that the new deckchair was a popular product.</ex>
+      <trans/>
+      <hr/>
+      <ex>Do you have the paperback of ”Gone with the Wind”?</ex>
+      <trans/>
+      <hr/>
+      <ex>You'll find their number in the phone book.  Our new local phone book's over three inches thick.</ex>
+      <trans/>
+      <hr/>
+      <ex>Erin used the phonebook to look up the number of her high school boyfriend.</ex>
+      <trans/>
+      <hr/>
+      <ex>My first picture book was Mother Goose's Tales.</ex>
+      <trans/>
+      <hr/>
+      <ex>Do you know where I can find a telephone book? - I need to look up a number.</ex>
+      <trans/>
+      <hr/>
+    </ar>
+  </lexicon>
+</xdxf>

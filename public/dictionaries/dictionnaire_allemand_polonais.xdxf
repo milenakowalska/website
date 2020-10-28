@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xdxf lang_from="ger" lang_to="pol" format="visual" revision="DD">
+  <meta_info>
+    <title>Dictionnaire: allemand - polonais</title>
+    <description>Dictionary: Dictionnaire; language-from: allemand; language-to: polonais</description>
+    <full_name>Dictionnaire: allemand - polonais</full_name>
+    <creation_date>28-10-2020</creation_date>
+  </meta_info>
+  <lexicon>
+    <ar key="einsteigen">
+      <k>Können Sie mir bitte beim Einsteigen helfen?</k>
+      <span>Czy może mi Pan pomóc wjechać? [Pani]</span>
+      <hr/>
+      <k>einsteigen</k>
+      <span>wsiąść</span>
+      <hr/>
+      <k>einsteigen</k>
+      <span>wejść</span>
+      <hr/>
+      <k>einsteigen</k>
+      <span>wsiadają</span>
+      <hr/>
+      <ex>Przepraszam, że przeszkadzam, ale musi pan wsiąść.</ex>
+      <trans>Entschuldigen Sie, aber Sie müssen jetzt einsteigen.</trans>
+      <hr/>
+      <ex>Coś na co mógłbyś wsiąść i spłynąć...</ex>
+      <trans>Etwas, in das du einfach einsteigen und losfahren kannst...</trans>
+      <hr/>
+      <ex>Gość, z którym pracuję, Tevin Downey, chce wejść ze mną w spółkę.</ex>
+      <trans>Mein Kollege Tevin Downey will mit einsteigen.</trans>
+      <hr/>
+      <ex>Teraz nadszedł czas, by w to wejść.</ex>
+      <trans>Genau jetzt muss man hier einsteigen.</trans>
+      <hr/>
+      <ex>Sąsiadka widziała, jak wsiadają do wozu.</ex>
+      <trans>Eine Nachbarin hat sie in ein Auto einsteigen sehen.</trans>
+      <hr/>
+      <ex>Emily wsiadła do samochodu swojego chłopaka.</ex>
+      <trans>Ich sah Emily ins Auto ihres Freundes einsteigen.</trans>
+      <hr/>
+    </ar>
+  </lexicon>
+</xdxf>

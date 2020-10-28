@@ -1,0 +1,117 @@
+<%- include('partials/header.ejs') -%>
+
+<% if (errorStatement) { %>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong><%= errorStatement %></strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>  
+<% }; %>
+
+<div id='blog-main' class='my-5 p-5 container'>
+  <div class='row justify-content-center'>
+    <h1 id='language-h1' style="margin-top: 10px;">Find definition</h1>
+  </div>
+    <div class='row justify-content-center'>
+    <form action="/dictionary" method='POST'>
+      <div class="form-group">
+        <input class='form-control' type="text" id="word" name="word" placeholder="Word"><br>
+      </div>
+
+            <select class='form-control' id="languageFrom" name="languageFrom" onchange=validate1()>
+                <option value="" disabled selected>Language from</option>
+                <option value="chinois">Chinese</option>
+                <option value="anglais">English</option>
+                <option value="francais">French</option>
+                <option value="allemand">German</option>
+                <option value="italien">Italian</option>
+                <option value="portugais">Portuguese</option>
+                <option value="polonais">Polish</option>
+                <option value="russe">Russian</option>
+                <option value="espagnol">Spanish</option>
+            </select>
+            <div class='row justify-content-center my-0 py-0'>
+              <i class="text-center fas fa-arrow-right"></i>
+            </div>
+            <select class='mt-1 form-control' id="languageTo" name="languageTo">
+                <option value="" disabled selected>Language to</option>
+                <option value="chinois" id='chinois' disabled>Chinese</option>
+                <option value="anglais" id='anglais'>English</option>
+                <option value="francais" id='francais'>French</option>
+                <option value="allemand" id='allemand'>German</option>
+                <option value="italien" id='italien'>Italian</option>
+                <option value="portugais" id='portugais'>Portuguese</option>
+                <option value="polonais" id='polonais'>Polish</option>
+                <option value="russe" id='russe' disabled>Russian</option>
+                <option value="espagnol" id='espagnol'>Spanish</option>
+            </select><br>
+            <label class='main_label'><h4>Select dictionary:</h4></label><br>
+            <input type="checkbox" value="wordreference" id='wordreference' name="dictionaryName" onchange=validate3()>
+            <label for="wordreference"> Wordreference</label><br>
+
+            <input type="checkbox" value="dictionnaire" id='dictionnaire' name="dictionaryName" onchange=validate2()>
+            <label for="dictionnaire"> Dictionnaire</label><br>
+
+            <input type='submit' class="btn btn-dark" value='Find definition'>
+
+    </form>
+</div>
+
+
+<p style='color:grey'>Source 1: <cite>https://www.wordreference.com/</cite></p>
+<p style='color:grey'>Source 2: <cite>https://dictionary.reverso.net/</cite></p>
+
+</div>
+<script>    
+    function validate1(){
+        var from = document.getElementById("languageFrom").value;
+        var to = document.getElementById("languageTo").value;    
+    
+      if(from == "russe"){
+        document.getElementById("chinois").disabled = true;
+        document.getElementById("polonais").disabled = true;
+        document.getElementById("italien").disabled = true;
+        document.getElementById("espagnol").disabled = true;
+        document.getElementById("portugais").disabled = true;
+        document.getElementById("allemand").disabled = true;
+
+      }else{
+        document.getElementById("chinois").disabled = false;
+        document.getElementById("polonais").disabled = false;
+        document.getElementById("italien").disabled = false;
+        document.getElementById("espagnol").disabled = false;
+        document.getElementById("portugais").disabled = false;
+        document.getElementById("allemand").disabled = false;
+      }
+
+      if((from == "anglais")||(from == "francais")){
+        document.getElementById("russe").disabled = false;
+      }else{
+        document.getElementById("russe").disabled = true;
+      }};
+
+    function validate2(){
+        var from = document.getElementById("languageFrom").value;
+        var to = document.getElementById("languageTo").value;  
+
+      if(((from == "italien")||(from == "polonais")||(from == "portugais")||(from == "allemand")||(from == "espagnol"))&&(to == "chinois")){
+        document.getElementById("dictionnaire").disabled = true;
+      }else{
+        document.getElementById("dictionnaire").disabled = false;
+      }
+      };
+
+      function validate3(){
+        var from = document.getElementById("languageFrom").value;
+        var to = document.getElementById("languageTo").value;  
+
+      if((from == "francais")&&(to == "russe")){
+        document.getElementById("wordreference").disabled = true;
+      }else{
+        document.getElementById("wordreference").disabled = false;
+      }};
+    </script>
+
+
+<%- include('partials/footer.ejs') -%>

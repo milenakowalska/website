@@ -1,0 +1,33 @@
+<%- include('partials/header.ejs') -%>
+
+
+<% if (errorStatement) { %>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong><%= errorStatement %></strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>  
+<% }; %>
+<div id='blog-main' class='my-5 p-5 container'>
+  <div class='row justify-content-center'>
+    <h1 style="margin-top: 10px;" class='text-center' id='language-h1'>Deutsche Artikel</h1>
+  </div>
+  <div class='row justify-content-center'>
+    <form action='/german-article' method='POST'>
+        <div class="form-group">
+            <input style='width:300px;margin:auto' type="text" class="form-control" placeholder="Wort" name='word'>
+        </div>
+       <button type="submit" class="btn btn-dark">Artikel prüfen</button>
+    </form>
+  </div>
+  <div class='row justify-content-center'>
+    <a href="/words" ><button class="btn btn-mylight">Liste mit allen Wörtern</button></a>
+
+  </div>
+    <p style='color:grey'>Source: <cite>https://www.duden.de/</cite></p>
+  </div>
+</div>
+
+
+<%- include('partials/footer.ejs') -%>
