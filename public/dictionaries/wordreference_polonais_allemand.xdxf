@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xdxf lang_from="pol" lang_to="ger" format="visual" revision="DD">
+  <meta_info>
+    <title>Wordreference: polonais - allemand</title>
+    <description>Dictionary: Wordreference; language-from: polonais; language-to: allemand</description>
+    <full_name>Wordreference: polonais - allemand</full_name>
+    <creation_date>28-10-2020</creation_date>
+  </meta_info>
+  <lexicon>
+    <ar key="las">
+      <k>las</k>
+      <span>Wald </span>
+      <hr/>
+      <k>las</k>
+      <span>Baumsavanne </span>
+      <context> (Geographie)</context>
+      <hr/>
+      <k>las</k>
+      <span>Waldland </span>
+      <hr/>
+      <k>las, lasek, lasek</k>
+      <span>Wald , Wälder </span>
+      <context> (Geographie)</context>
+      <hr/>
+      <k>las deszczowy</k>
+      <span>Regenwald </span>
+      <hr/>
+      <k>Las Vegas</k>
+      <span>Las Vegas </span>
+      <context> (Geographie)</context>
+      <hr/>
+      <k>Las Vegas</k>
+      <span>Las Vegas </span>
+      <hr/>
+      <ex>Za naszym domem jest las, nie tylko jakieś tam drzewa.</ex>
+      <trans>Hinter unserem Haus ist ein Wald, nicht nur ein paar Bäume.</trans>
+      <hr/>
+    </ar>
+  </lexicon>
+</xdxf>

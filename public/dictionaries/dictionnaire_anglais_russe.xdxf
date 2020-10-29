@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xdxf lang_from="eng" lang_to="rus" format="visual" revision="DD">
+  <meta_info>
+    <title>Dictionnaire: anglais - russe</title>
+    <description>Dictionary: Dictionnaire; language-from: anglais; language-to: russe</description>
+    <full_name>Dictionnaire: anglais - russe</full_name>
+    <creation_date>28-10-2020</creation_date>
+  </meta_info>
+  <lexicon>
+    <ar key="great">
+      <k>great</k>
+      <span>большой  </span>
+      <context>    (heat, pain)&#13;
+  </context>
+      <hr/>
+      <k>great</k>
+      <span>сильный</span>
+      <context>    (city, man)&#13;
+  </context>
+      <hr/>
+      <ex>Мой отец, Димитар Асенов Наворский, был большим поклонником вашей музыки.</ex>
+      <trans>My father, Dimitar Asenov Navorski, was great, great fan of your music.</trans>
+      <hr/>
+      <ex>Он приехал из Лондона. Великий, великий человек.</ex>
+      <trans>All the way from London, the great, great man.</trans>
+      <hr/>
+      <ex>Путешествие по великому пути несёт в себе и великую ответственность.</ex>
+      <trans>Walking the great path brings great responsibility.</trans>
+      <hr/>
+      <ex>Следующие двадцать лет мы увидим великие изменения великую радость и великую печаль.</ex>
+      <trans>The next 20 years would see great changes... great joy and great sorrow.</trans>
+      <hr/>
+      <ex>Я тоже прихожу с большими надеждами, но я хотел бы покинуть Конференцию с большим удовлетворением.</ex>
+      <trans>I also come with great expectations, but I would like to leave the Conference with great satisfaction.</trans>
+      <hr/>
+      <ex>Это было большое приключение и большая честь.</ex>
+      <trans>It's been a great adventure and a great honour.</trans>
+      <hr/>
+    </ar>
+  </lexicon>
+</xdxf>

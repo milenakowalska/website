@@ -510,8 +510,8 @@ app.route('/german-article')
     const word = req.body.word;
     let meanings = []
 
-    const regex = new RegExp(word, 'i')
-    Word.find({word: {$regex: regex}}, function(err, foundWords){
+    let regex = new RegExp("^" + word + "$", "i")
+    Word.find({word: regex}, function(err, foundWords){
         if(err){
             console.log(err);
         } else {

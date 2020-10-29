@@ -2,9 +2,12 @@ html {
     position: relative;
     min-height: 100%;
   }
+
+
   body {
     margin-bottom: 60px; /* Margin bottom by footer height */
     box-sizing: border-box;
+
 }
 
   body, h1, h2 {
@@ -175,7 +178,7 @@ i {
   float: left;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 768px) {
   #post-img {
     float: none;
   }
@@ -185,8 +188,13 @@ i {
   #heading {
     padding: 0px 0px 20px 0px;
   }
+  .definitions {
+    display: none !important;
 }
-
+  .article-word {
+    text-align: center;
+}
+}
 
 
 .der {

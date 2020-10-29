@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xdxf lang_from="ger" lang_to="fre" format="visual" revision="DD">
+  <meta_info>
+    <title>Wordreference: allemand - francais</title>
+    <description>Dictionary: Wordreference; language-from: allemand; language-to: francais</description>
+    <full_name>Wordreference: allemand - francais</full_name>
+    <creation_date>28-10-2020</creation_date>
+  </meta_info>
+  <lexicon>
+    <ar key="Tasse">
+      <k>Tasse, Becher, Becher</k>
+      <span>tasse , gobelet </span>
+      <context> (avec une anse : café, thé,...)</context>
+      <hr/>
+      <k>Tasse, Becher, Pot, Becher</k>
+      <span>mug , grande tasse, tasse haute </span>
+      <context> (anglicisme)</context>
+      <hr/>
+      <k>Tasse</k>
+      <span>tasse </span>
+      <hr/>
+      <k>Tasse, Becher, Becher</k>
+      <span>mug , grande tasse </span>
+      <context> (anglicisme : quantité)</context>
+      <hr/>
+      <k>Tasse</k>
+      <span>thé </span>
+      <hr/>
+      <k>Tasse</k>
+      <span>tasse </span>
+      <hr/>
+      <k>Teetasse, Tasse, Tasse</k>
+      <span>tasse, tasse à thé </span>
+      <hr/>
+      <k>Kaffeetasse, Tasse, Kaffeepott, Tasse</k>
+      <span>tasse à café </span>
+      <hr/>
+      <k>Espresso, eine Tasse Espresso, eine Tasse Espresso</k>
+      <span>expresso </span>
+      <context> (café)</context>
+      <hr/>
+      <k>Tasse Tee, einen Tee, einen Tee</k>
+      <span>tasse de thé , thé </span>
+      <hr/>
+      <k>eine Tasse voll</k>
+      <span>tasse, tasse à thé </span>
+      <context> (contenu)</context>
+      <hr/>
+      <k>einen Tee, einen Kaffee, Tasse Tee, Tasse Kaffee, Tasse Tee, Tasse Kaffee</k>
+      <span>tasse de , un </span>
+      <hr/>
+      <k>eine Tasse mit entkoffeiniertem Kaffee, eine Tasse mit koffeinfreiem Kaffee, eine Tasse mit koffeinfreiem Kaffee</k>
+      <span>déca </span>
+      <context> (décaféiné)</context>
+      <hr/>
+      <k>Tasse Tee</k>
+      <span>tasse de thé </span>
+      <hr/>
+      <ex>Ich brauche kein Glas. Gib mir einfach eine Plastik-Tasse.</ex>
+      <trans>Je n'ai pas besoin d'un verre. Donne-moi juste un gobelet en plastique.</trans>
+      <hr/>
+      <ex>Laura hat auf dem Flohmarkt eine leuchtend gelbe Tasse gekauft.</ex>
+      <trans>Laura a acheté un mug jaune dans une brocante.</trans>
+      <hr/>
+      <ex>Kann ich eine Tasse Kaffee haben?</ex>
+      <trans>Puis-je avoir une tasse de café ?</trans>
+      <hr/>
+      <ex>Tom trank eine große Tasse Kaffee.</ex>
+      <trans>Tom a bu un grand mug (or:  une grande tasse) de café.</trans>
+      <hr/>
+      <ex>Soll ich eine Tasse machen?</ex>
+      <trans>Je fais du thé ?</trans>
+      <hr/>
+    </ar>
+  </lexicon>
+</xdxf>

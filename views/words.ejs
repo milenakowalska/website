@@ -9,10 +9,10 @@
 
 
     <div id='meaning' class="word row <%= word.article %>">
-        <div class='col-md-5'>
+        <div class='col-md-5 article-word'>
             <h3><%= word.article %> <%= word.word %></h3>
         </div>
-        <div class='col-md-7'>
+        <div class='definitions col-md-7'>
             <% for (var i = 0; i < word.definitions.length; i++) { %>
                 
                 <% if (word.definitions[i] !== '') { %>

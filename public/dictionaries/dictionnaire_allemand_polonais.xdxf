@@ -39,5 +39,63 @@
       <trans>Ich sah Emily ins Auto ihres Freundes einsteigen.</trans>
       <hr/>
     </ar>
+    <ar key="abreißen">
+      <k>abreißen</k>
+      <span>zburzyć</span>
+      <hr/>
+      <k>abreißen</k>
+      <span>zburzyć</span>
+      <hr/>
+      <k>abreißen</k>
+      <span>urwać</span>
+      <hr/>
+      <k>abreißen</k>
+      <span>wyburzyć</span>
+      <hr/>
+      <ex>Watsahita chce to zburzyć i zbudować luksusowy hotel.</ex>
+      <trans>Watsuhita will es abreißen und da ein Luxushotel hinstellen.</trans>
+      <hr/>
+      <ex>Jesteśmy tu, by zburzyć ten budynek z polecenia banku.</ex>
+      <trans>Wir sollen dieses Gebäude im Auftrag der Bank abreißen.</trans>
+      <hr/>
+      <ex>Jeśli ktoś zrobiłby to mojemu dziecku, to chciałbym urwać mu łeb.</ex>
+      <trans>Sollte man das meinem Kind antun, würde ich den Verantwortlichen die Köpfe abreißen.</trans>
+      <hr/>
+      <ex>Jeśli McLaren P1 nie będzie najszybszy Wy dwaj możecie wyburzyć mi dom.</ex>
+      <trans>Wenn der McLaren nicht der schnellste ist, könnt ihr mein Haus abreißen.</trans>
+      <hr/>
+      <ex>Gdy ktoś pragnie zbudować lepszy dom, najpierw musi wyburzyć ten stary.</ex>
+      <trans>Wer ein besseres Zuhause bauen will, muss erst das alte abreißen.</trans>
+      <hr/>
+      <ex>Chcę, by zburzyli czysty dom.</ex>
+      <trans>Ich möchte, dass sie ein sauberes Haus abreißen.</trans>
+      <hr/>
+    </ar>
+    <ar key="Prädikat">
+      <k>Prädikat</k>
+      <span>mit Prädikat</span>
+      <hr/>
+      <k>Prädikat</k>
+      <span>wyróżnikiem</span>
+      <hr/>
+      <ex>Określenie "Qualitätswein mit Prädikat" jest dozwolone w okresie przejściowym, który upływa dnia 31 grudnia 2010 r.</ex>
+      <trans>Der Begriff „Qualitätswein mit Prädikat" ist während einer Übergangszeit bis zum 31.12.2010 weiterhin zugelassen.</trans>
+      <hr/>
+      <ex>Prädikatswein (Qualitätswein mit Prädikat [3]), uzupełnione terminem:</ex>
+      <trans>Prädikatswein (Qualitätswein mit Prädikat [3]), ergänzt durch:</trans>
+      <hr/>
+      <ex>(Kabinett): pierwszy poziom jakości win gatunkowych z wyróżnikiem (Prädikatsweine). Wina Kabinett są lekkie i subtelne, osiągają 67-85 stopni Öchsle w zależności od odmiany winogron i regionu.</ex>
+      <trans>(Kabinett): unterste Stufe der Qualitätsweine mit Prädikat (Prädikatsweine); Kabinettweine sind leicht und fein und weisen je nach Rebsorte und Region 67 bis 85º Öchsle auf;</trans>
+      <hr/>
+      <ex>(Spätlese): wino gatunkowe z wyróżnikiem, którego masa moszczu wynosi 76-95 stopni Öchsle w zależności od odmiany winogron i regionu. Winogrona powinny pochodzić z późnego zbioru i być w pełni dojrzałe.</ex>
+      <trans>(Spätlese): Qualitätswein mit Prädikat (Prädikatswein), dessen Mostgewicht je nach Rebsorte und Region zwischen 76 und 95º Öchsle beträgt; die Traube sollte spät geerntet werden und muss vollreif sein; Spätleseweine haben einen intensiven Geschmack (nicht unbedingt süß);</trans>
+      <hr/>
+      <ex>Qualitätswein mit Prädikat w połączeniu z jednym z następujących określeń:</ex>
+      <trans>Qualitätswein mit Prädikat in Verbindung mit einem der Begriffe</trans>
+      <hr/>
+      <ex>Orzeczenie definiuje rolę mianownika w bycie.</ex>
+      <trans>Das Prädikat definiert die Rolle des Nomens im Sein.</trans>
+      <hr/>
+    </ar>
   </lexicon>
 </xdxf>

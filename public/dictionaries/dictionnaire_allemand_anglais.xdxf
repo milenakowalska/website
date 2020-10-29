@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xdxf lang_from="ger" lang_to="eng" format="visual" revision="DD">
+  <meta_info>
+    <title>Dictionnaire: allemand - anglais</title>
+    <description>Dictionary: Dictionnaire; language-from: allemand; language-to: anglais</description>
+    <full_name>Dictionnaire: allemand - anglais</full_name>
+    <creation_date>28-10-2020</creation_date>
+  </meta_info>
+  <lexicon>
+    <ar key="abreißen">
+      <k>den Kontakt nicht abreißen lassen</k>
+      <span>to stay in touch</span>
+      <hr/>
+      <k>er wird dir nicht den Kopf abreißen</k>
+      <span>he won't bite your head off</span>
+      <hr/>
+      <k>abreißen ; ausreißen ; entreißen ; herausreißen ; ; rausreißen ; losreißen ; ziehen</k>
+      <span>yank out</span>
+      <hr/>
+      <k>jdm den Kopf abreißen</k>
+      <span>to skin sb alive</span>
+      <hr/>
+      <k>er wird dir schon nicht den Kopf abreißen</k>
+      <span>he won't bite your head off</span>
+      <hr/>
+      <k>abreißen</k>
+      <span>to tear out  </span>
+      <context> er hat sich ($) den Knopf abgerissen  </context>
+      <hr/>
+      <k>abreißen</k>
+      <span>to break (off)  </span>
+      <context>    (fig)  </context>
+      <hr/>
+      <ex>Andrews Construction is scheduled to demolish the lot on Monday.</ex>
+      <trans>Andrews Construction wird es am Montag abreißen.</trans>
+      <hr/>
+      <ex>The government is going to bring a tractor and it will demolish all these small huts.</ex>
+      <trans>Die Regierung schickt einen Traktor und wird all die kleinen Hütten abreißen.</trans>
+      <hr/>
+      <ex>Well, I can't tear down The Arcadian.</ex>
+      <trans>Ich kann das Arcadian nicht abreißen.</trans>
+      <hr/>
+      <ex>They will tear down the old building in two days.</ex>
+      <trans>Sie werden das alte Gebäude in zwei Tagen abreißen.</trans>
+      <hr/>
+      <ex>Fill in sample, push button and tear off printout.</ex>
+      <trans>Probe einfüllen, Taste drücken und Ausdruck abreißen.</trans>
+      <hr/>
+      <ex>Tear off a section from the blister at the perforation.</ex>
+      <trans>An der Perforation ein Teil des Blisters abreißen.</trans>
+      <hr/>
+    </ar>
+  </lexicon>
+</xdxf>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xdxf lang_from="eng" lang_to="rus" format="visual" revision="DD">
+  <meta_info>
+    <title>Wordreference: anglais - russe</title>
+    <description>Dictionary: Wordreference; language-from: anglais; language-to: russe</description>
+    <full_name>Wordreference: anglais - russe</full_name>
+    <creation_date>28-10-2020</creation_date>
+  </meta_info>
+  <lexicon>
+    <ar key="flower">
+      <k>flower</k>
+      <span>цветок </span>
+      <context> (colourful plant)</context>
+      <hr/>
+      <ex>He brought her some flowers for her birthday.</ex>
+      <trans>Он принёс ей цветы ко дню рождения.</trans>
+      <hr/>
+    </ar>
+  </lexicon>
+</xdxf>
